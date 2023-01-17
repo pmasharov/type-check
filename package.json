@@ -1,12 +1,38 @@
 {
-  "name": "@pnmasharov/type-guards",
-  "version": "1.0.0",
-  "description": "guards to check types",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Pavel Masharov",
-  "license": "ISC",
-  "private": false
+	"name": "@pnmasharov/type-checker",
+	"version": "1.0.0",
+	"description": "A small set of functions to check your value against a specific type",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Pavel Masharov",
+	"license": "ISC",
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pmasharov/type-check.git"
+	},
+	"keywords": [
+		"type",
+		"check",
+		"guard",
+		"isNumber",
+		"isArray",
+		"isString",
+		"checker",
+		"isFinite",
+		"undefined",
+		"null",
+		"primitive",
+		"isFunction",
+		"function"
+	],
+	"bugs": {
+		"url": "https://github.com/pmasharov/type-check/issues"
+	},
+	"homepage": "https://github.com/pmasharov/type-check#readme",
+	"publishConfig": {
+		"access": "public"
+	}
 }
