@@ -38,14 +38,14 @@ module.exports = {
 	 * @returns {boolean} returns true if checked value is zero
 	 */
 	checkIsZero: (value) => {
-		return this.checkIsNumber(value) && value === 0;
+		return value === 0;
 	},
 	/**
 	 *
 	 * @param {*} value value to check if it is finite number
 	 * @returns {boolean} returns true if checked value is finite number
 	 */
-	checkIsZero: (value) => {
+	checkIsFinite: (value) => {
 		return Number.isFinite(value);
 	},
 
@@ -86,7 +86,7 @@ module.exports = {
 	 * @param {*} value value to check if it is function
 	 * @returns {boolean} returns true if checked value is function
 	 */
-	checkIsUndefined: (value) => {
+	checkIsFunction: (value) => {
 		return value.constructor === Function;
 	},
 };
