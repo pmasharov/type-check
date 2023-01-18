@@ -14,15 +14,15 @@ module.exports = {
 	 * @returns {boolean} returns true if checked value is number
 	 */
 	checkIsNumber: (value) => {
-		return typeof value === "number";
+		return typeof value === "number" && !isNaN(value);
 	},
-  	/**
+	/**
 	 *
 	 * @param {number} value value to check if it is positive number
 	 * @returns {boolean} returns true if checked value is positive number
 	 */
 	checkIsNumberPositive: (value) => {
-		return this.checkIsNumber(value) && value > 0;
+		return typeof value === "number" && !isNaN(value) && value > 0;
 	},
 	/**
 	 *
@@ -30,7 +30,7 @@ module.exports = {
 	 * @returns {boolean} returns true if checked value is negative number
 	 */
 	checkIsNumberNegative: (value) => {
-		return this.checkIsNumber(value) && value < 0;
+		return typeof value === "number" && !isNaN(value) && value < 0;
 	},
 	/**
 	 *
@@ -81,12 +81,12 @@ module.exports = {
 	checkIsUndefined: (value) => {
 		return value === undefined;
 	},
-  	/**
+	/**
 	 *
 	 * @param {*} value value to check if it is function
 	 * @returns {boolean} returns true if checked value is function
 	 */
 	checkIsFunction: (value) => {
-		return value.constructor === Function;
+		return value instanceof Function && value.constructor === Function;
 	},
 };
