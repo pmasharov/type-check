@@ -1,6 +1,6 @@
 {
 	"name": "@pnmasharov/type-check",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A small set of functions to check value against a specific type",
 	"main": "index.js",
 	"scripts": {
