@@ -4,7 +4,7 @@
 	"description": "A small set of functions to check value against a specific type",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "jest"
 	},
 	"author": "Pavel Masharov",
 	"license": "ISC",

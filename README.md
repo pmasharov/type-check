@@ -2,15 +2,17 @@
 
 ## A small set of functions to check your values for a specific type
 
+
 1. Installation
 
 ```bash
 npm install @pnmasharov/type-check
 ```
 
+
 2. Usage
 
-```JavaScript
+```javascript
 import {
   checkIsString,
   checkIsNumber,
@@ -33,3 +35,16 @@ if (checkIsNumber(amount)) {
   // here you can work with your number
 }
 ```
+
+
+3. Testing
+
+  - install jest globally:
+  ```bash
+  npm install --global jest
+  ```
+
+  - run tests: 
+  ```bash
+  npm run test
+  ```
