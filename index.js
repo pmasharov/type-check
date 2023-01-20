@@ -1,45 +1,17 @@
-module.exports = {
-	/**
-	 *
-	 * @param {*} value value to check if it is string
-	 * @returns {boolean} returns true if checked value is string
-	 */
-	checkIsString: (value) => {
-		return typeof value === "string";
-	},
+const {
+	checkIsString,
+	checkIsNumber,
+	checkIsNumberPositive,
+	checkIsNumberNegative,
+	checkIsZero,
+} = require("./src");
 
-	/**
-	 *
-	 * @param {*} value value to check if it is number
-	 * @returns {boolean} returns true if checked value is number
-	 */
-	checkIsNumber: (value) => {
-		return typeof value === "number" && !isNaN(value);
-	},
-	/**
-	 *
-	 * @param {number} value value to check if it is positive number
-	 * @returns {boolean} returns true if checked value is positive number
-	 */
-	checkIsNumberPositive: (value) => {
-		return typeof value === "number" && !isNaN(value) && value > 0;
-	},
-	/**
-	 *
-	 * @param {number} value value to check if it is negative number
-	 * @returns {boolean} returns true if checked value is negative number
-	 */
-	checkIsNumberNegative: (value) => {
-		return typeof value === "number" && !isNaN(value) && value < 0;
-	},
-	/**
-	 *
-	 * @param {number} value value to check if it is zero
-	 * @returns {boolean} returns true if checked value is zero
-	 */
-	checkIsZero: (value) => {
-		return value === 0;
-	},
+module.exports = {
+	checkIsString,
+	checkIsNumber,
+	checkIsNumberPositive,
+	checkIsNumberNegative,
+	checkIsZero,
 	/**
 	 *
 	 * @param {*} value value to check if it is finite number
