@@ -19,7 +19,7 @@ import {
   checkIsNumberPositive,
   checkIsNumberNegative,
   checkIsZero,
-  checkIsFinite,
+  checkIsNumberFinite,
   checkIsArray,
   checkIsObject,
   checkIsNull,

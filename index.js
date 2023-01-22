@@ -1,6 +1,7 @@
 const {
 	checkIsString,
 	checkIsNumber,
+	checkIsNumberFinite,
 	checkIsNumberPositive,
 	checkIsNumberNegative,
 	checkIsZero,
@@ -12,14 +13,7 @@ module.exports = {
 	checkIsNumberPositive,
 	checkIsNumberNegative,
 	checkIsZero,
-	/**
-	 *
-	 * @param {*} value value to check if it is finite number
-	 * @returns {boolean} returns true if checked value is finite number
-	 */
-	checkIsFinite: (value) => {
-		return Number.isFinite(value);
-	},
+	checkIsNumberFinite,
 
 	/**
 	 *
